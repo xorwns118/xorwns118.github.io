@@ -15,8 +15,8 @@
 
 - name: League Of Legend Stats Calculator (IOS)
   descr: "리그오브레전드 스텟 계산기"
-  IOS: https://apps.apple.com/kr/app/lsc/id6474672851
-  Android: https://play.google.com/store/apps/details?id=com.xorwns.LSC&pli=1
+  demo_IOS: https://apps.apple.com/kr/app/lsc/id6474672851
+  demo_Android: https://play.google.com/store/apps/details?id=com.xorwns.LSC&pli=1
   tags:
     - tag: Unity2D
     - tag: C#

@@ -117,6 +117,9 @@ google-analytics:
 
 plugins:
   - "jekyll-github-metadata"
+collections:
+  posts:
+    output: true
 
 exclude:
   [

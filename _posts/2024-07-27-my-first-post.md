@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My First Post"
+title: "깃허브 첫 블로그 생성"
 date: 2024-07-27 10:00:00 +0000
 ---
 

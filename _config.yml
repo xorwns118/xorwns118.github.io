@@ -34,7 +34,8 @@ show_aboutme_card: true
 # about_me_title: The will be displayed as the title in the About Me section
 about_me_title:
 # about_me_description: This will be displayed under the title.
-about_me_description: 새로운 도전과 학습을 즐기고, 끊임없이 성장하고자 하는 마음가짐을 가지자. 어떻게든 하면 된다.
+about_me_description: 새로운 도전과 학습을 즐기고, 끊임없이 성장하고자 하는 마음가짐을 가지자.
+  어떻게든 하면 됨 ㅋ ㅋ ㅋ
 
 show_blog_section: true
 # SKILLS SECTION

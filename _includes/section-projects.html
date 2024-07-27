@@ -9,7 +9,7 @@
         <p class="project-desc">{{project.descr}}</p>
         {% if project.demo %}
           {% for link in project.demo %}
-            <a href="{{ link.url }}" target="_blank">{{ link.name }} Demo</a>
+            <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
           {% endfor %}
         {% endif %}
         {% if project.tags %}

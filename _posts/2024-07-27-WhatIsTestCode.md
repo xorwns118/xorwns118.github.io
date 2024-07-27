@@ -2,7 +2,7 @@
 layout: post
 title: "테스트코드란?"
 date: 2024-07-28 03:10:00 +0900
-categories: [개발]
+categories: [Blog]
 ---
 
 # 테스트 코드란?

@@ -14,7 +14,7 @@ baseurl: ""
 username: TaekJun
 # typing_text: This will be typed before 'scroll down for more'.
 # > set this to your job title, e.g. Fullstack Developer
-typing_text: jjjjjun_blog
+typing_text: Back-End & Game-Client Developer
 # email: Your E-Mail address for the email button.
 email: xorwns118@gmail.com
 # For every social button you want to display, set your username or userid
@@ -37,6 +37,7 @@ about_me_title:
 about_me_description: 새로운 도전과 학습을 즐기고 끊임없이 성장하자는 마인드
 
 show_blog_card: true
+blog_title: jun_blog
 # SKILLS SECTION
 # show_skills_card:
 # > setting this to true, will display the Skills section

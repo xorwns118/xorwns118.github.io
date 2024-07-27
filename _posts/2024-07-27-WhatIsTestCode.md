@@ -26,7 +26,7 @@ tags: [개발]
 - TFD(Test First Development + 리팩토링
 - 기능 동작을 검증 (메소드 단위)
 
-  ![스크린샷 2024-07-27 17.54.00.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/9e997f31-cfc9-4db0-aa77-94a6b5d4f1d8/5da9d689-2acf-4609-84c6-c7507d9fdab5/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-07-27_17.54.00.png)
+<img width="535" alt="스크린샷 2024-07-28 04 26 21" src="https://github.com/user-attachments/assets/1861401e-ea33-4704-8f6e-59f2e0786009">
 
 
 ### BDD

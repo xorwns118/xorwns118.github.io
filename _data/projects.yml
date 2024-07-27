@@ -13,21 +13,34 @@
 #     - tag: AngularJS
 #     - tag: Node
 
-- name: project X
-  descr: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam"
-  demo: https://example.com/
+- name: League Of Legend Stats Calculator (IOS)
+  descr: "리그오브레전드 스텟 계산기"
+  IOS: https://apps.apple.com/kr/app/lsc/id6474672851
+  Android: https://play.google.com/store/apps/details?id=com.xorwns.LSC&pli=1
   tags:
-    - tag: MongoDB
-    - tag: Express
-    - tag: AngularJS
-    - tag: Node
+    - tag: Unity2D
+    - tag: C#
+    - tag: Android
+    - tag: IOS
+    - tag: Admob
 
-- name: project Y
-  descr: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam"
-  demo: https://example.com/
+- name: 텔레그램 환율 정보 서비스 (엔화, 달러)
+  descr: "엔화 및 달러 3원 이상 변동 시 자동 알림 서비스 (하나은행 기준)"
+  demo: https://t.me/+I7TX9FytP9JhN2Nl
   tags:
-    - tag: Python
-    - tag: Django
+    - tag: C#
+    - tag: Telegram Api
+    - tag: Hana Financial Group Api
 
-- name: project Z
-  descr: "You can also set a project without demo link and no tags"
+- name: RecoMovie 해커톤
+  desce: "영화관 및 영화 리뷰 사이트"
+  demo: https://github.com/xorwns118/hackathon2-RecoMovie
+  tags:
+    - tag: Java
+    - tag: MySQL
+    - tag: MariaDB
+    - tag: Spring
+    - tag: HTML
+    - tag: Thymeleaf
+    - tag: Google Map Api
+    - tag: TMDB Api

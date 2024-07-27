@@ -5,18 +5,9 @@
 # - name: Language
 #   weight: 5
 
-- name: TypeScript
-  weight: 1
-
 - name: C#
   weight: 5
 
 - name: JAVA
   weight: 4
-
-- name: MySQL
-  weight: 4
-
-- name: Unity
-  weight: 5
 

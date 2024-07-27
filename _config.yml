@@ -8,7 +8,7 @@ description:
 # baseurl: 사이트의 하위 경로
 #> 저장소 이름을 .github.io로 변경한 경우 ““로 설정하십시오.
 baseurl: ""
-
+markdown: kramdown
 # LANDING PAGE
 # username: This will displayed on the landing page as your name.
 username: TaekJun

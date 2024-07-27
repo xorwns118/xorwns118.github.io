@@ -37,7 +37,7 @@ about_me_title:
 about_me_description: 새로운 도전과 학습을 즐기고, 끊임없이 성장하고자 하는 마음가짐을 가지자.
   어떻게든 하면 됨 ㅋ ㅋ ㅋ
 
-show_blog_section: true
+show_blog_card: true
 # SKILLS SECTION
 # show_skills_card:
 # > setting this to true, will display the Skills section

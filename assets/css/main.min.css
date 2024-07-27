@@ -32,6 +32,32 @@
         font-size: 0.875rem; /* 날짜 폰트 크기 */
     }
 
+    /* 포스트 제목 스타일 */
+    .post-title {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+
+    /* 포스트 날짜 스타일 */
+    .post-date {
+        font-size: 0.9em;
+        color: #666;
+        margin-bottom: 1em;
+    }
+
+    /* 포스트 내용 스타일 */
+    .post-content {
+        line-height: 1.6;
+        margin-bottom: 2em;
+    }
+
+    /* 포스트 요약 스타일 */
+    .post-excerpt {
+        font-size: 1.1em;
+        color: #444;
+        margin-bottom: 1em;
+    }
+
     .pagination {
         display: flex;
         justify-content: space-between;

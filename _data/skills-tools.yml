@@ -6,19 +6,19 @@
 #   weight: 5
 
 - name: Notion
-  weight: 3
+  weight: 2
 
 - name: IntelliJ
-  weight: 4
+  weight: 3
 
 - name: Postman
-  weight: 4
+  weight: 2
 
 - name: Git
-  weight: 5
+  weight: 3
 
 - name: MySQL
-  weight: 4
+  weight: 3
 
-- name: Visual Studio
-  weight: 5
+- name: VS Code
+  weight: 3

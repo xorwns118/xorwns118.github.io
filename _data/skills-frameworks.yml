@@ -12,7 +12,7 @@
   weight: 3
 
 - name: Unity2D
-  weight: 5
+  weight: 3
 
 - name: Unity3D
-  weight: 3
+  weight: 2

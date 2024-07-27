@@ -28,73 +28,35 @@
     <hr />
   </div>
 </div>
-{% include landing-page.html %}
-<div class="layout">
-  <nav>
-    <ul>
-      <li><a href="{{ site.baseurl }}/">Home</a></li>
-      <li><a href="{{ site.baseurl }}/blog/">Blog</a></li>
-      <!-- 다른 메뉴 항목들 -->
-    </ul>
-  </nav>
+  {% if site.show_blog_section %}
+    <section class="card neumorphism-card-big">
+      {% include section-blog.html %}
+    </section>
+  {% endif %}
   {% if site.show_aboutme_card %}
-  <section class="card neumorphism-card-big">
-    {% include section-aboutme.html %}
-  </section>
+    <section class="card neumorphism-card-big">
+      {% include section-aboutme.html %}
+    </section>
   {% endif %}
   {% if site.show_skills_card %}
-  <section class="card neumorphism-card-big">
-    {% include section-skills.html %}
-  </section>
-  {% endif %}
-  {% if site.show_blog_section %}
-  <section class="card neumorphism-card-big">
-    <h2>Blog</h2>
-    <div class="blog-list">
-      {% for post in site.posts %}
-      <article class="blog-post">
-        <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-        <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
-        <small>Published on {{ post.date | date: "%B %d, %Y" }}</small>
-      </article>
-      {% endfor %}
-    </div>
-  </section>
+    <section class="card neumorphism-card-big">
+      {% include section-skills.html %}
+    </section>
   {% endif %}
   {% if site.show_timeline_card %}
-  <section class="card neumorphism-card-big">
-    {% include section-timeline.html %}
-  </section>
+    <section class="card neumorphism-card-big">
+      {% include section-timeline.html %}
+    </section>
   {% endif %}
   {% if site.show_projects_card %}
-  <section class="card neumorphism-card-big">
-    <h2>{{ site.projects_title }}</h2>
-    <ul>
-      {% for project in site.projects %}
-      <li>
-        <h3>{{ project.name }}</h3>
-        <p>{{ project.descr }}</p>
-        {% if project.demo %}
-        {% for link in project.demo %}
-        <a href="{{ link.url }}" target="_blank">{{ link.name }} Demo</a>
-        {% endfor %}
-        {% endif %}
-        {% if project.tags %}
-        <ul>
-          {% for tag in project.tags %}
-          <li>{{ tag }}</li>
-          {% endfor %}
-        </ul>
-        {% endif %}
-      </li>
-      {% endfor %}
-    </ul>
-  </section>
+    <section class="card neumorphism-card-big">
+      {% include section-projects.html %}
+    </section>
   {% endif %}
   {% if site.show_contact_card %}
-  <section class="card neumorphism-card-big">
-    {% include section-contact.html %}
-  </section>
+    <section class="card neumorphism-card-big">
+      {% include section-contact.html %}
+    </section>
   {% endif %}
 </div>
 {% include footer.html %}

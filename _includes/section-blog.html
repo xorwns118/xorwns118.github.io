@@ -1,10 +1,21 @@
-<h2>Blog</h2>
-<div class="blog-list">
-    {% for post in site.posts %}
-    <article class="blog-post">
-        <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-        <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
-        <small>Published on {{ post.date | date: "%B %d, %Y" }}</small>
-    </article>
-    {% endfor %}
-</div>
+<section class="card neumorphism-card-big">
+    <div class="blog-list">
+        {% for post in paginator.posts %}
+        <div class="blog-post">
+            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            <small>{{ post.date | date: "%B %d, %Y" }}</small>
+            <p>{{ post.excerpt }}</p>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- 페이징 네비게이션 -->
+    <div class="pagination">
+        {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+        {% endif %}
+        {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+        {% endif %}
+    </div>
+</section>

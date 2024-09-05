@@ -1,0 +1,76 @@
+---
+layout: post
+title:  "백준 2178번 - 미로 탐색"
+date:   2024-09-04
+categories: [blog]
+tags: [bfs]
+---
+
+```java
+package org.example.exception;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class MazeNavigation {
+	static int[][] able = { {1, 0}, {-1, 0}, {0, 1}, {0, -1} };
+
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String[] NAndM = br.readLine().split(" ");
+
+		int N = Integer.parseInt(NAndM[0]);
+		int M = Integer.parseInt(NAndM[1]);
+
+		String[] map = new String[N];
+
+		boolean[][] isVisited = new boolean[N][M];
+
+		for(int i = 0; i < N; i++) {
+			map[i] = br.readLine();
+			for(int j = 0; j < map[i].length(); j++) {
+				if(map[i].charAt(j) == '0') {
+					isVisited[i][j] = true;
+				}
+			}
+		}
+
+		System.out.println(bfs(N, M, isVisited));
+	}
+
+	public static int bfs(int N, int M, boolean[][] isVisited) {
+		Queue<int[]> queue = new LinkedList<>();
+		queue.add(new int[] {0, 0, 1});
+
+		while(!queue.isEmpty()) {
+			int[] current = queue.poll();
+			int r = current[0];
+			int c = current[1];
+			int count = current[2];
+			
+			if(r == N - 1 && c == M - 1) {
+				return count;
+			}
+
+			for(int[] map : able) {
+				int dr = r + map[0];
+				int dc = c + map[1];
+				if(validate(dr, dc, isVisited, N, M)) {
+					queue.add(new int[] {dr, dc, count + 1});
+					isVisited[dr][dc] = true;
+				}
+			}
+		}
+
+		return -1;
+	}
+
+	public static boolean validate(int dr, int dc, boolean[][] isVisited, int N, int M) {
+		return dr >= 0 && dc >= 0 && dr < N && dc < M && !isVisited[dr][dc];
+	}
+
+}
+```

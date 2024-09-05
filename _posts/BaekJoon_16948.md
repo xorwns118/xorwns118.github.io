@@ -2,8 +2,8 @@
 layout: post
 title:  "백준 16948번 - 데스나이트"
 date:   2024-09-03
-categories: blog
-layout: post
+categories: [blog]
+tags: [bfs]
 ---
 
 ## 문제

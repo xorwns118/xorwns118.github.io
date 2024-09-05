@@ -2,8 +2,8 @@
 layout: post
 title:  "백준 16502번 - 그녀를 찾아서"
 date:   2024-09-02
-categories: blog
-layout: post
+categories: [blog]
+tags: [bfs]
 ---
 
 ## 문제

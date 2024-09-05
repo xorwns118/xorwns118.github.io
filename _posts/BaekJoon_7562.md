@@ -2,8 +2,8 @@
 layout: post
 title:  "백준 7562번 - 나이트의 이동"
 date:   2024-09-04
-categories: blog
-layout: post
+categories: [blog]
+tags: [bfs]
 ---
 
 ## 문제

@@ -15,10 +15,10 @@
 # in the templates via {{ site.myvariable }}.
 title: jekyll-theme-potato-hacker
 author: "<your_name>"
-email: "<your@mail>"
+email: "<xorwns118@gmail.com>"
 description: A simple Jekyll theme based on potatoes and hackers
-baseurl: "/jekyll-theme-potato-hacker" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://xorwns118.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
 # ------------------------------------------------------------------------------
 # Custom settings
@@ -31,7 +31,7 @@ linkedin_id: "<linkedin_id>"
 
 # Theme
 # theme: jekyll-theme-potato-hacker                 # Uncomment this
-# remote_theme: luxedo/jekyll-theme-potato-hacker   # Or this
+remote_theme: luxedo/jekyll-theme-potato-hacker   # Or this
 theme_repository: "https://github.com/luxedo/jekyll-theme-potato-hacker"
 theme_base: "dark"       # Theme palette (light | dark)
 theme_switch: on         # Show color switch (on | off)

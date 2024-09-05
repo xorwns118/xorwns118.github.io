@@ -1,0 +1,88 @@
+---
+layout: post
+title:  "백준 16502번 - 그녀를 찾아서"
+date:   2024-09-02
+categories: blog
+layout: post
+---
+
+## 문제
+
+---
+
+<img src="/assets/img/screenshot/16502.png">
+
+---
+
+## 풀이
+
+---
+
+```java
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class Main {
+	static List<Node> list = new ArrayList<>();
+	static Map<String, Double> hash = new HashMap<>();
+
+	public static void main(String[] args) throws IOException {
+		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+		int N = Integer.parseInt(bf.readLine());
+		int M = Integer.parseInt(bf.readLine());
+
+		for (int i = 0; i < M; i++) {
+			String[] temp = bf.readLine().split(" ");
+			String start = temp[0];
+			String end = temp[1];
+			double weight = Double.parseDouble(temp[2]);
+			list.add(new Node(start, end, weight));
+		}
+
+		hash.put("A", 0.25);
+		hash.put("B", 0.25);
+		hash.put("C", 0.25);
+		hash.put("D", 0.25);
+
+		for (int j = 0; j < N; j++) {
+			Map<String, Double> nextHash = new HashMap<>();
+			nextHash.put("A", 0.0);
+			nextHash.put("B", 0.0);
+			nextHash.put("C", 0.0);
+			nextHash.put("D", 0.0);
+
+			for (Node node : list) {
+				String start = node.start;
+				String end = node.end;
+				double weight = node.weight;
+				double currentProb = hash.get(start);
+				nextHash.put(end, nextHash.get(end) + currentProb * weight);
+			}
+
+			hash = nextHash;
+		}
+
+		System.out.printf("%.2f\n", hash.get("A") * 100);
+		System.out.printf("%.2f\n", hash.get("B") * 100);
+		System.out.printf("%.2f\n", hash.get("C") * 100);
+		System.out.printf("%.2f\n", hash.get("D") * 100);
+	}
+
+	static class Node {
+		String start;
+		String end;
+		Double weight;
+
+		Node(String start, String end, double weight) {
+			this.start = start;
+			this.end = end;
+			this.weight = weight;
+		}
+	}
+}
+```

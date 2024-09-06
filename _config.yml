@@ -40,7 +40,7 @@ theme_switch: on         # Show color switch (on | off)
 blog: on                 # Show blog tag and post list (on | off)
 avatar: on               # Show avatar (on | off)
 avatar_image: "assets/img/MyImage.JPG"
-avatar_description: "일단 하면 어떻게든 된다."
+avatar_description: "게임 클라이언트 개발자 하고 싶어요"
 highlighter_theme: gruvbox  # Theme of the syntax_highlighter [base16 |
                             # colorful | github | gruvbox | molokai |
                             # monokai | pastie | thankful_eyes | tulip ]
@@ -50,9 +50,9 @@ toolbar_priority:        # Order of the items in the toolbar (except for blog an
 # Collections
 collections:
   dropdown:
-    output: false
+    output: true
   items:
-    output: false
+    output: true
 # ------------------------------------------------------------------------------
 
 

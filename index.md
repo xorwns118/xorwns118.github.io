@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Potato Hacker
+title: 딱중 블로그
 description: Test page
 ---
-# 딱중 블로그
+# 공부하자
 - 하루 하나 `알고리즘`
 - 공부
   - `C#`

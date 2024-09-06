@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: 딱중 블로그
 author: "<김택준>"
-email: "<xorwns118@gmail.com>"
+email: "xorwns118@gmail.com "
 description: 게임 클라이언트 개발자가 목표입니다.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://xorwns118.github.io/" # the base hostname & protocol for your site, e.g. http://example.com

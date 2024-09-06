@@ -25,9 +25,8 @@ url: "https://xorwns118.github.io/" # the base hostname & protocol for your site
 # ------------------------------------------------------------------------------
 # Useful links
 github_username: "xorwns118"
-facebook_username: "<facebook_username>"
-twitter_username: "<twitter_username>"
-linkedin_id: "<linkedin_id>"
+instagram_username: "qqllzq_"
+linkedin_id: "taekjun-kim-84a9b731a"
 
 # Theme
 # theme: jekyll-theme-potato-hacker                 # Uncomment this
@@ -45,7 +44,6 @@ highlighter_theme: gruvbox  # Theme of the syntax_highlighter [base16 |
                             # colorful | github | gruvbox | molokai |
                             # monokai | pastie | thankful_eyes | tulip ]
 toolbar_priority:        # Order of the items in the toolbar (except for blog and home)
-  - About
 
 # Collections
 collections:
